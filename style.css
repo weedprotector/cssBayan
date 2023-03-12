@@ -72,52 +72,52 @@ svg {
 
 
 /*Hover behavior*/
+@media (hover: hover) {
+    .bayan:hover .bayan__icons {
+        width: auto;
+        animation: opacity-animation 2s;
+    }
 
-.bayan:hover .bayan__icons {
-    width: auto;
-    animation: opacity-animation 2s;
+    .bayan:hover .bayan__text {
+        color:black
+    }
+
+    .bayan:hover .plus-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+    .bayan__input:hover ~ .bayan__meme .bayan__meme-img {
+        height: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .bayan__input:hover ~ .bayan__meme {
+        animation: meme-animation 0.5s;
+        max-height: 100%;
+    }
+
+    .bayan__input:checked:hover ~ .bayan__meme {
+        animation: meme-animation 0s;
+    }
+
+
+    .bayan__input:hover ~ .bayan__text .plus-icon {
+        width: 0;
+        height: 0;
+    }
+
+    .bayan__input:hover ~ .bayan__text .cross-icon {
+        width: 2rem;
+        height: 2rem;
+        animation: opacity-animation 1s;
+    }
+
+    .bayan__input:checked:hover  ~ .bayan__text .cross-icon {
+        animation: opacity-animation 0s;
+    }
 }
-
-.bayan:hover .bayan__text {
-    color:black
-}
-
-.bayan:hover .plus-icon {
-    width: 2rem;
-    height: 2rem;
-}
-
-
-.bayan__input:hover ~ .bayan__meme .bayan__meme-img {
-    height: 100%;
-    padding-bottom: 1rem;
-}
-
-.bayan__input:hover ~ .bayan__meme {
-    animation: meme-animation 0.5s;
-    max-height: 100%;
-}
-
-.bayan__input:checked:hover ~ .bayan__meme {
-    animation: meme-animation 0s;
-}
-
-
-.bayan__input:hover ~ .bayan__text .plus-icon {
-    width: 0;
-    height: 0;
-}
-
-.bayan__input:hover ~ .bayan__text .cross-icon {
-    width: 2rem;
-    height: 2rem;
-    animation: opacity-animation 1s;
-}
-
-.bayan__input:checked:hover  ~ .bayan__text .cross-icon {
-    animation: opacity-animation 0s;
-}
-
 .bayan__input:checked ~ .bayan__text .cross-icon {
     width: 2rem;
     height: 2rem;
@@ -192,7 +192,7 @@ svg {
     }
 }
 
-@media screen and (min-width:821px) and (max-width:1919px){
+@media screen and (min-width:821px) and (max-width:1000px){
     h1 {
         text-align: center;
     }
